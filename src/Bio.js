@@ -25,9 +25,9 @@ class Bio extends Component {
   }
 
   handleClick() {
-    this.setState({
+    this.setState(Object.assign({}, this.state, {
       bulletsVisible: !this.state.bulletsVisible,
-    });
+    }));
   }
 
   makeBullets() {
