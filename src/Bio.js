@@ -12,7 +12,11 @@ class Bio extends Component {
     return (
       <div className="App-bio">
         <header className="App-header" onClick={() => this.handleClick()}>
-          <img src={this.props.portrait} className="App-logo" alt={`portrait for ${this.props.name}`} />
+          <img
+            src={this.props.portrait}
+            className="App-logo"
+            alt={`portrait for ${this.props.name}`}
+          />
           <h1 className="App-title">{this.props.name}</h1>
         </header>
         <div className={this.makeBulletClasses()}>
