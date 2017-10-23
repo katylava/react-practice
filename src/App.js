@@ -8,9 +8,10 @@ import Bio from './Bio.js';
 class App extends Component {
   render() {
     let bullets = [
-      'a girl has no bio',
-      'i don\'t know who i am'
+      "a girl has no bio",
+      "i don't know who i am",
     ];
+
     return (
       <div className="App">
         <Bio
